@@ -1,5 +1,3 @@
-# streamlit_app.py
-
 import streamlit as st
 import tensorflow as tf
 from tensorflow.keras.applications import ResNet50
@@ -86,6 +84,7 @@ if st.button("Run Prediction"):
     if ts_csv:
         inputs['ts_input'] = ts_seq
 
+    # Dummy outputs for demonstration
     dummy_img = np.zeros((1, 10))
     dummy_txt = np.zeros((1, 3))
     dummy_ts = np.zeros((1, 1))
